@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 class BasicCard extends StatelessWidget {
@@ -12,20 +14,7 @@ class BasicCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        title: Text(title),
-        trailing: Image.network(image),
-        subtitle: const Row(
-          children: [
-            Icon(Icons.thumb_up),
-            SizedBox(width: 10),
-            Icon(Icons.thumb_down),
-            SizedBox(width: 10),
-            Icon(Icons.comment),
-          ],
-        ),
-      ),
-    );
+    //TODO: implement basic card
+    return Card();
   }
 }

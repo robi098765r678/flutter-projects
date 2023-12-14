@@ -16,28 +16,7 @@ class Statistics extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Hello!\nHere are your statistics:'),
-              Text('Meows given: $given'),
-              Text('Meows taken: $taken'),
-              Text('Overall score: $score'),
-            ],
-          ),
-          Container(
-            height: 100,
-            child: Image.network(
-                'https://freepngimg.com/thumb/cat/1-2-cat-png-2.png'),
-          ),
-        ],
-      ),
-    );
+    //TODO: implement statistics
+    return Row();
   }
 }

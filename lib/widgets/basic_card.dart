@@ -15,6 +15,19 @@ class BasicCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //TODO: implement basic card
-    return Card();
+    return Card(
+      child: ListTile(
+          title: Text(title),
+           subtitle: Row(
+            children: [
+              Icon(Icons.thumb_up),
+              SizedBox(width: 10),
+              Icon(Icons.thumb_down),
+              SizedBox(width: 10),
+              Icon(Icons.comment),
+            ],
+          ),
+          trailing: Image.network(image)),
+    );
   }
 }

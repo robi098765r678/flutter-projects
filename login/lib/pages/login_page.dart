@@ -47,7 +47,8 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(color: Colors.purple),
             ),
           ),
-          if (error != null) Text(error!)
+          if (error != null) Text(error!),
+          Text("test", style: TextStyle(color: Colors.blue))
         ]),
       ),
     ));
